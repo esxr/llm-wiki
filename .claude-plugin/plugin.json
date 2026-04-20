@@ -1,5 +1,5 @@
 {
-  "name": "llm-wiki",
+  "name": "product-wiki",
   "version": "0.1.0",
   "description": "Maintains a self-healing DAG of LLM-authored wiki pages automatically synced with your codebase",
   "author": {

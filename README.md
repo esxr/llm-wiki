@@ -80,7 +80,7 @@ Add the `product-wiki` marketplace and install the plugin in three commands:
 
 ```
 /plugin marketplace add esxr/product-wiki
-/plugin install llm-wiki@product-wiki
+/plugin install product-wiki@pranav.com.au
 /reload-plugins
 ```
 

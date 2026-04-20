@@ -1,5 +1,5 @@
 {
-  "name": "product-wiki",
+  "name": "pranav.com.au",
   "owner": {
     "name": "Pranav",
     "email": "pranav@kcart.dev"
@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "llm-wiki",
+      "name": "product-wiki",
       "description": "Maintains a self-healing DAG of LLM-authored wiki pages automatically synced with your codebase as you build.",
       "source": "./",
       "homepage": "https://esxr.github.io/product-wiki"
