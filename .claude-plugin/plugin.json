@@ -1,0 +1,10 @@
+{
+  "name": "llm-wiki",
+  "version": "0.1.0",
+  "description": "Maintains docs/wiki/ as a DAG of LLM-authored pages kept in sync with the KCart codebase",
+  "author": {
+    "name": "Pranav",
+    "email": "pranav@kcart.dev"
+  },
+  "keywords": ["wiki", "docs", "knowledge-graph", "eis", "kcart"]
+}

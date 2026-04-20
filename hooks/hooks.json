@@ -1,0 +1,24 @@
+{
+  "description": "KCart Wiki hooks — log file changes and check thresholds to trigger wiki regeneration",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/log-change.sh",
+            "timeout": 5,
+            "statusMessage": "Logging change to wiki pending queue..."
+          },
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/threshold-check.sh",
+            "timeout": 5,
+            "statusMessage": "Checking wiki regeneration threshold..."
+          }
+        ]
+      }
+    ]
+  }
+}
