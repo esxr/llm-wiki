@@ -1,12 +1,12 @@
 ---
-description: "Learn about any KCart feature by spidering the wiki DAG — usage: /wiki-learn <feature-name> [--depth N]"
+description: "Learn about any feature by spidering the wiki DAG — usage: /explore-feature <feature-name> [--depth N]"
 argument-hint: <feature-name> [--depth N]
 allowed-tools: Agent, Read, Glob, Grep, Bash
 ---
 
 # Wiki Learn
 
-Learn about any KCart feature, entity, or concept by resolving it to a wiki page and spidering the DAG outward from that page.
+Learn about any feature, entity, or concept by resolving it to a wiki page and spidering the DAG outward from that page.
 
 ## Input
 
@@ -33,7 +33,7 @@ Try these strategies in order, stopping at the first match:
 
 **e) No match:** If none of the above yields a result, report to the user:
 
-> No wiki page found for '<feature-name>'. Run `/kcart-wiki:wiki-bootstrap` or `/kcart-wiki:wiki-reconcile` first.
+> No wiki page found for '<feature-name>'. Run `/product-wiki:init` or `/product-wiki:wiki-reconcile` first.
 
 Stop here — do not spider.
 

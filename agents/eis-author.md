@@ -33,8 +33,8 @@ Your task description contains `nl_description` — a natural-language descripti
 ## Step 1: Load Conventions
 
 Read both skill files before doing anything else:
-1. `.claude/plugins/kcart-wiki/skills/eis-writing/SKILL.md` — EIS format, sections, naming, grounding rule, wiki companion rule.
-2. `.claude/plugins/kcart-wiki/skills/kcart-entity-map/SKILL.md` — entity enumeration for domain mapping.
+1. `.claude/plugins/product-wiki/skills/spec-guide/SKILL.md` — EIS format, sections, naming, grounding rule, wiki companion rule.
+2. `.claude/plugins/product-wiki/skills/product-map/SKILL.md` — entity enumeration for domain mapping.
 
 These are authoritative. Follow them exactly.
 
@@ -76,7 +76,7 @@ Collect all findings into a structured feasibility summary. This summary feeds d
 
 Determine the next EIS number: `ls docs/eis/EIS-*.md`, find the highest number, add 1. Zero-pad to three digits.
 
-Write the EIS to `docs/eis/EIS-<###>-<kebab-slug>.md` using the template from the `eis-writing` skill. All 8 required sections, in order:
+Write the EIS to `docs/eis/EIS-<###>-<kebab-slug>.md` using the template from the `spec-guide` skill. All 8 required sections, in order:
 
 1. **H1 title**: `# EIS-<###>: <Title>`
 2. **Problem**: ground every claim in files you actually read. Cite paths and line numbers.

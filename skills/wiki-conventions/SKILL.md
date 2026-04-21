@@ -1,10 +1,10 @@
 ---
-name: wiki-conventions
-description: This skill should be used by any agent in the kcart-wiki plugin before editing, adding, or reconciling a wiki page under docs/wiki/. Trigger when the agent mentions "editing a wiki page", "adding a wiki entry", "wiki conventions", "kcart-wiki plugin", "docs/wiki", "wiki frontmatter", "wiki link rule", "reconciling wiki", "wiki status conflict", or is about to Write/Edit a file under docs/wiki/.
+name: doc-guide
+description: Use before editing, adding, or reconciling any wiki page under docs/wiki/. Trigger when the agent mentions "editing a wiki page", "adding a wiki entry", "wiki conventions", "docs/wiki", "wiki frontmatter", "wiki link rule", "reconciling wiki", "wiki status conflict", or is about to Write/Edit a file under docs/wiki/.
 version: 0.1.0
 ---
 
-# KCart Wiki Conventions
+# Wiki Conventions
 
 Authoritative rules every wiki edit MUST satisfy. Full schema lives in `docs/wiki/schema.md` — consult it for field semantics, allowed enums, and page taxonomy.
 

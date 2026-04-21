@@ -1,5 +1,5 @@
 {
-  "description": "KCart Wiki hooks — log file changes and check thresholds to trigger wiki regeneration",
+  "description": "product-wiki hooks — log file changes and check thresholds to trigger wiki regeneration",
   "hooks": {
     "PostToolUse": [
       {

@@ -1,11 +1,11 @@
 ---
-name: eis-writing
-description: Use when authoring a new KCart Executable Implementation Spec (EIS) from a natural-language description. Triggers on "write an EIS", "create new EIS", "executable implementation spec", "kcart-wiki plugin", "/wiki-add-eis". Teaches the KCart EIS file format, numbering, required sections, the grounding rule (must verify against src/ before writing), and the wiki-companion rule (summary under docs/wiki/eis/ plus index update).
+name: spec-guide
+description: Use when authoring a new Executable Implementation Spec (EIS) from a natural-language description. Triggers on "write an EIS", "create new EIS", "executable implementation spec", "/create-feature". Teaches the EIS file format, numbering, required sections, the grounding rule (must verify against src/ before writing), and the wiki-companion rule (summary under docs/wiki/eis/ plus index update).
 ---
 
-# KCart EIS Writing
+# EIS Writing
 
-Author an EIS that matches the six existing specs in `docs/eis/`. An EIS is a concrete, codebase-grounded implementation plan — not a design doc, not a PRD.
+Author an EIS that follows the established format in `docs/eis/`. An EIS is a concrete, codebase-grounded implementation plan — not a design doc, not a PRD.
 
 ## 1. Naming & location
 

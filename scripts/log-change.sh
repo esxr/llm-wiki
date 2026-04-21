@@ -8,7 +8,7 @@
 
 set -u
 
-PROJECT_ROOT="/Users/pranav/Desktop/kcart"
+PROJECT_ROOT="${CLAUDE_PROJECT_ROOT:-$(pwd)}"
 PENDING_DIR="${PROJECT_ROOT}/docs/wiki/.pending"
 PENDING_LOG="${PENDING_DIR}/changes.jsonl"
 

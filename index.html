@@ -307,23 +307,23 @@
 
     <div class="commands-grid">
       <div class="cmd-card">
-        <div class="cmd-name">/wiki-bootstrap</div>
+        <div class="cmd-name">/init</div>
         <div class="cmd-desc">One-time population of <code>docs/wiki/</code> from existing codebase sources — Prisma models, API routes, user stories, and EIS documents. Runs phases in parallel and cross-links all results.</div>
       </div>
       <div class="cmd-card">
-        <div class="cmd-name">/wiki-reconcile</div>
+        <div class="cmd-name">/sync</div>
         <div class="cmd-desc">Manually drain <code>.pending/changes.jsonl</code> into wiki pages. Use after a large refactor or when you want to sync changes without waiting for the threshold hook to fire.</div>
       </div>
       <div class="cmd-card">
-        <div class="cmd-name">/wiki-lint</div>
+        <div class="cmd-name">/audit</div>
         <div class="cmd-desc">Health-check the entire wiki DAG. Finds orphaned pages, broken links, stale reconciliation dates, contradictions, and asymmetric cross-references. Can fix issues automatically on request.</div>
       </div>
       <div class="cmd-card">
-        <div class="cmd-name">/wiki-learn &lt;feature&gt;</div>
+        <div class="cmd-name">/explore-feature &lt;feature&gt;</div>
         <div class="cmd-desc">Spider the wiki DAG from any entry point — feature name, entity, or concept — up to a configurable BFS depth. Returns a structured brief of everything the wiki knows about that topic.</div>
       </div>
       <div class="cmd-card">
-        <div class="cmd-name">/wiki-add-eis &lt;description&gt;</div>
+        <div class="cmd-name">/create-feature &lt;description&gt;</div>
         <div class="cmd-desc">Author a new Executable Implementation Spec from a natural-language description. Runs overlap detection against existing EIS documents and feasibility analysis before writing.</div>
       </div>
     </div>
@@ -348,11 +348,11 @@
       <div class="arch-box">
         <div class="arch-box-title">Commands</div>
         <ul>
-          <li>wiki-bootstrap</li>
-          <li>wiki-reconcile</li>
-          <li>wiki-lint</li>
-          <li>wiki-learn</li>
-          <li>wiki-add-eis</li>
+          <li>init</li>
+          <li>sync</li>
+          <li>audit</li>
+          <li>explore-feature</li>
+          <li>create-feature</li>
         </ul>
       </div>
       <div class="arch-box">
@@ -366,9 +366,9 @@
       <div class="arch-box">
         <div class="arch-box-title">Skills</div>
         <ul>
-          <li>wiki-conventions</li>
-          <li>eis-writing</li>
-          <li>kcart-entity-map</li>
+          <li>doc-guide</li>
+          <li>spec-guide</li>
+          <li>product-map</li>
         </ul>
       </div>
     </div>
@@ -427,9 +427,9 @@
 
     <p style="margin-top:1.5rem;">Then bootstrap from your existing codebase:</p>
 
-    <pre><code>/wiki-bootstrap</code></pre>
+    <pre><code>/init</code></pre>
 
-    <p style="margin-top:1rem; color: var(--muted); font-size: 0.9rem;">Hooks maintain the wiki automatically after that. Run <code>/wiki-lint</code> any time to health-check the graph.</p>
+    <p style="margin-top:1rem; color: var(--muted); font-size: 0.9rem;">Hooks maintain the wiki automatically after that. Run <code>/audit</code> any time to health-check the graph.</p>
   </section>
 
 </div>

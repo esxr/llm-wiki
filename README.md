@@ -20,11 +20,11 @@ The wiki is a **directed acyclic graph**: each page tracks its raw source files 
 
 | Command | Description |
 |---------|-------------|
-| `/wiki-bootstrap` | One-time population of `docs/wiki/` from Prisma models, API routes, user stories, and EIS documents. Runs phases in parallel and cross-links all results. |
-| `/wiki-reconcile` | Manually drain `.pending/changes.jsonl` into wiki pages. Useful after a large refactor. |
-| `/wiki-lint` | Health-check the wiki DAG — finds orphans, broken links, stale pages, contradictions, and asymmetric cross-references. |
-| `/wiki-learn <feature>` | Spider the wiki DAG from any entry point up to a configurable BFS depth. Returns a structured brief of everything the wiki knows about that topic. |
-| `/wiki-add-eis <description>` | Author a new Executable Implementation Spec from a natural-language description, with overlap detection and feasibility analysis. |
+| `/init` | One-time population of `docs/wiki/` from Prisma models, API routes, user stories, and EIS documents. Runs phases in parallel and cross-links all results. |
+| `/sync` | Manually drain `.pending/changes.jsonl` into wiki pages. Useful after a large refactor. |
+| `/audit` | Health-check the wiki DAG — finds orphans, broken links, stale pages, contradictions, and asymmetric cross-references. |
+| `/explore-feature <feature>` | Spider the wiki DAG from any entry point up to a configurable BFS depth. Returns a structured brief of everything the wiki knows about that topic. |
+| `/create-feature <description>` | Author a new Executable Implementation Spec from a natural-language description, with overlap detection and feasibility analysis. |
 
 ---
 
@@ -60,9 +60,9 @@ docs/wiki/
 - `wiki-graph.sh` — utility for graph queries
 
 **Skills**
-- `wiki-conventions` — schema contract reference (frontmatter rules, link rules, contradiction protocol)
-- `eis-writing` — conventions for authoring EIS documents
-- `kcart-entity-map` — canonical source locations for entity enumeration
+- `doc-guide` — schema contract reference (frontmatter rules, link rules, contradiction protocol)
+- `spec-guide` — conventions for authoring EIS documents
+- `product-map` — canonical source locations for entity enumeration (Prisma models, API routes, stories, EIS docs)
 
 ---
 
@@ -90,10 +90,10 @@ Add the `product-wiki` marketplace and install the plugin in three commands:
 
 ```bash
 # After installing, bootstrap from your existing codebase:
-/wiki-bootstrap
+/init
 
 # Hooks maintain the wiki automatically from here.
-# Run /wiki-lint any time to health-check the graph.
+# Run /audit any time to health-check the graph.
 ```
 
 ---

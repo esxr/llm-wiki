@@ -10,7 +10,7 @@ One-time population of `docs/wiki/` from authoritative codebase sources. You are
 
 Before starting, read these two files:
 - `docs/wiki/schema.md` — the wiki contract (frontmatter spec, link rules, page-creation rules)
-- `.claude/plugins/kcart-wiki/skills/kcart-entity-map/SKILL.md` — canonical source locations and enumeration patterns
+- `.claude/plugins/product-wiki/skills/entity-map/SKILL.md` — canonical source locations and enumeration patterns
 
 Obey every convention in those files. Violations corrupt the wiki.
 

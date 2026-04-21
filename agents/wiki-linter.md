@@ -160,7 +160,7 @@ If issues were found, suggest remediation for each category:
 - **Orphans:** add `related:` links from relevant pages, or fold content into an existing page.
 - **Broken links:** remove or update the link target.
 - **Asymmetric links:** add the missing backlink to the target page.
-- **Stale pages:** run `/wiki-reconcile` to drain pending changes.
+- **Stale pages:** run `/sync` to drain pending changes.
 - **Contradictions:** flag for human review.
 - **Missing pages:** create via wiki-maintainer or fold into existing pages.
 - **Index inconsistencies:** add missing entries or remove stale ones.

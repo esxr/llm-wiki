@@ -6,7 +6,7 @@
 
 set -uo pipefail
 
-PROJECT_ROOT="/Users/pranav/Desktop/kcart"
+PROJECT_ROOT="${CLAUDE_PROJECT_ROOT:-$(pwd)}"
 WIKI_DIR="${PROJECT_ROOT}/docs/wiki"
 
 if [ ! -d "$WIKI_DIR" ]; then

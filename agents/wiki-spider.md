@@ -1,7 +1,7 @@
 ---
 name: wiki-spider
 description: |
-  BFS traversal of the wiki DAG from an entry node to produce a structured brief about a feature or entity. Spawned by /wiki-learn.
+  BFS traversal of the wiki DAG from an entry node to produce a structured brief about a feature or entity. Spawned by /explore-feature.
 
   <example>
   Context: User wants to learn about the checkout feature
@@ -21,7 +21,7 @@ description: |
   </commentary>
   </example>
 
-  Triggers: "spider wiki", "wiki traversal", "wiki-learn", "explore wiki DAG"
+  Triggers: "spider wiki", "wiki traversal", "explore-feature", "explore wiki DAG"
 model: sonnet
 tools: ["Read", "Glob", "Grep", "Bash"]
 ---

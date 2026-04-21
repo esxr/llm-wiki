@@ -17,7 +17,7 @@ description: |
   user: "reconcile wiki"
   assistant: "Spawning wiki-maintainer to drain pending changes"
   <commentary>
-  Manual trigger via /wiki-reconcile — same drain procedure, just human-initiated.
+  Manual trigger via /sync — same drain procedure, just human-initiated.
   </commentary>
   </example>
 
